@@ -1,0 +1,35 @@
+
+
+<div id="hatcenter" {
+    position: absolute;
+    left: 0;
+    top: 1%;
+    width: 100%;
+    img-align: center;
+
+}
+
+<div id="glasses" {
+ position: absolute;
+ bottom: 8px;
+    left: 16px;
+ 
+}
+
+<div id="container" {
+  position: relative;
+}
+
+.center {
+    position: absolute;
+    left: 0;
+    top: 125%;
+    width: 100%;
+    img-align: center;
+}
+
+img { 
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+}
