@@ -1,0 +1,29 @@
+
+
+.column-1 {
+      width: 374px;
+      margin: 25px;
+      border: 25px;
+      padding: 5px;
+      background-color: yellow;
+      display: inline-block;
+      font-family: "Times New Roman";
+}
+
+.column-2 {
+       width: 320px;
+      margin: 25px;
+      border: 25px;
+      padding: 5px;
+      background-color: yellow;
+      display: inline-block;
+      font-family: "Arial";
+}
+
+body {
+    background-color: lightblue;
+}
+
+div.image {
+   content:https://assets-cdn.github.com/images/modules/logos_page/Octocat.png(http://placehold.it/300x300px);
+}
