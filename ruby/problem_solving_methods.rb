@@ -1,7 +1,33 @@
 
-
 #Release 1
 
+#Add a method to your file that takes a number of Fibonacci terms to generate and 
+#returns an array of the terms. For example, fib(6) would return [0,1,1,2,3,5]
+#undefined num next
+
+def fib(n)
+  if n == 1
+    1
+  elsif n == 2
+    1
+  else
+    fib(n-1) + fib(n-2)
+  end
+end
+
+p fib(3)
+p fib(4)
+p fib(5)
+p fib(6)
+p fib(7)
+
+fibonacci =[]
+
+fibonacci << fib(3)
+fibonacci << fib(4)
+fibonacci << fib(5)
+fibonacci << fib(6)
+fibonacci << fib(7)
 
 #Release 2
 #1). Choose a simple sorting algorithm: the bubble sorting method
