@@ -1,63 +1,66 @@
 class Puppy
 
-  def fetch(toy)
-    puts "I brought back the #{toy}!"
-    toy
-  end
-  
-  def speak(number)
-	number.times{puts "Woof!"}
-	end
-	
-	def roll_over
-		puts "*roll over*"
-	end
-	
-	def dog_years(years)
-		puts "I am #{years*7}  human years old"
-	end
-	
-	def sit
-	puts "I just sat!"
-	end
-	
-	def initialize
-	puts "Initializing new puppy instance ..."
-	end
-		
-end
-
-thomas = Puppy.new
-thomas.fetch("ball")
-thomas.speak(9)
-thomas.roll_over
-thomas.dog_years(6)
-thomas.sit
-
-class Cat
-	def meow(mew)
-	mew.times{puts "Meow!"}
-	end
-	
-	def scratch
-	puts "I like to scratch furniture!"
-	end
-	
-	def initialize
-	puts "Initializing new cat instance"
-	end
-	
-end
-
-felix = Cat.new
-felix.meow(3)
-felix.scratch
-
-pound = []
-weight = 0
- 
- while weight < 50
-   pound << Cat.new
-   weight += 5
+ def fetch(toy)
+   puts "I brought back the #{toy}!"
+   toy
  end
- puts pound.length
+
+ def speak(n)
+  n.times {puts "Woof!"}
+end
+
+def roll_over
+  puts "*rolls over*"
+end
+
+def dog_years(y)
+  dogs_years = y * 7 
+end
+
+def sit
+  puts "I sat, where's my treat?git stat"
+end
+
+def initialize
+  p "Initializing new puppy instance..."
+  end
+end
+
+rover = Puppy.new
+rover.fetch("ball")
+rover.speak(2)
+rover.roll_over
+rover.sit
+rover.dog_years(3)
+
+  class Kitten
+
+  def meow(n)
+    n.times {puts "Meow...burp"}
+  end
+
+  def scratch
+    puts "I just scratched your sofa"
+  end
+
+  def initialize
+    p "Initializing new kitten instance..."
+  end 
+
+end
+
+garfield = Kitten.new
+garfield.meow(4)
+garfield.scratch
+
+kitten_array = []
+x = 0
+until x == 50
+  kitten_array << Kitten
+    x += 1
+end 
+p kitten_array
+
+kitten_array.each do 
+  puts "I scratched my human a lot today"
+end 
