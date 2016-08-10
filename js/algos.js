@@ -18,11 +18,12 @@ function longest(array_of_strings){
 
 console.log(longest(["long phrase", "longest phrase", "longer phrase"]));
 
-console.log(longest(["high", "highest", "higher"]));
+console.log(longest(["fly high", "fly highest", "fly higher"]));
 
-console.log(longest(["fast", "faster", "fastest"]));
+console.log(longest(["run fast", "run faster", "run fastest"]));
 
 //release 1: Find a Key-Value Match
+//Objective find matches between the key and value hash arrays
 //1. create a function that takes in 2 objects
 //2. compare the objects (which will be hashes) to see if they both have the same key-value pair
 //3. if there is a match then return true. otherwise return false
@@ -43,38 +44,44 @@ function find_match(hash1, hash2){
   return false;
 }
 
-var males = {name: "Bob", age: 35};
-var females = {name: "Bertha", age: 35};
+var men = {name: "Ryu", age: 21};
+var women = {name: "Didi", age: 21};
 
-console.log(find_match(males, females));
+//print results
 
-var boys = {name: "Billy", age: 5};
-var girls = {name: "Betty", age: 6};
+console.log(find_match(men, women));
+
+var boys = {name: "Georgie", age: 10};
+var girls = {name: "Georgie", age: 9};
+
+//print results
 
 console.log(find_match(boys, girls));
 
 //release 2: Generate Random Test Data
+//Objective create random number of strings aka generate passwords
 //1. create a function that takes in an integer
-//2. that integer will create an array with length of the passed in integer and fill it with strings
-//3. the strings themselves should be of randomly varying length. it has a minimum of 1 letter and a maximum of 10
+//2. that integer will create an array with the length the integer 
+//and fill that length of number with strings
+//3. the strings themselves should be of randome length. This return is allowed to have 
+//1 to 10 letters 
 
-function random_array(number_of_strings){
-  var array = [];
+function random_password(number_of_strings){
+  var passwords = [];
   var alphabet = "abcdefghijklmnopqrstuvwxyz";
 
   for(var i = 0; i < number_of_strings; i++){
-    // create random string here
     var random_string = "";
     var random_length = Math.floor(Math.random() * 10) + 1
     for(var j = 0; j < random_length; j++){
       random_string += alphabet.charAt(Math.floor(Math.random() * alphabet.length));
     }
-    array.push(random_string);
+    passwords.push(random_string);
   }
-  console.log(array);
-  return array;
+  console.log(passwords);
+  return passwords;
 }
 
 for (var i = 0; i < 10; i++){
-  console.log(longest(random_array(3)));
+  console.log(longest(random_password(3)));
 }
