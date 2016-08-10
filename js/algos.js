@@ -58,7 +58,7 @@ var girls = {name: "Georgie", age: 9};
 
 console.log(find_match(boys, girls));
 
-//release 2: Generate Random Test Data
+//release 2: build random test data
 //Objective create random number of strings aka generate passwords
 //1. create a function that takes in an integer
 //2. that integer will create an array with the length the integer 
